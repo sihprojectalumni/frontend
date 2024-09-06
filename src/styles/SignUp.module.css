@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveInRev {
+    from {
+        transform: translateX(400px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+.image{
+    width: 607px;
+    height: 525px;
+    border: 0.6px solid #000;
+    border-right: 0px;
+    box-shadow: 0px 4px 50.1px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    margin-left: -400px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 525px;
+    width: 400px;
+    /* background-color: aqua; */
+    /* opacity: 0.5; */
+    /* filter: blur(10px); */
+    border: 1px solid #000;
+    border-left: 0px;
+    /* background: linear-gradient(270deg, #D9D4DA 0%, #E0CAE5 62.48%); */
+    box-shadow: 0px 4px 50.1px 0px rgba(0, 0, 0, 0.25);
+    margin-left: -400px;
+    transition: transform 1s ease-out;
+    animation: moveInX 2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.appName{
+    color: #000;
+    font-family: Barlow;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 60px;
+}
+
+.inputUsername{
+    width: 265px;
+    height: 15px;
+    color: #000;
+    flex-shrink: 0;
+    border-radius: 58px;
+    border: 1px solid #000;
+    padding: 10px;
+    padding-left: 20px;
+    background: none;
+    font-weight: 800;
+    margin-top: 45px;
+}
+
+.inputMail{
+    width: 265px;
+    height: 15px;
+    color: #000;
+    flex-shrink: 0;
+    border-radius: 58px;
+    border: 1px solid #000;
+    padding: 10px;
+    padding-left: 20px;
+    background: none;
+    font-weight: 800;
+    margin-top:15px;
+}
+
+.inputPassword{
+    width: 265px;
+    height: 15px;
+    color: #000;
+    flex-shrink: 0;
+    border-radius: 58px;
+    border: 1px solid #000;
+    padding: 10px;
+    padding-left: 20px;
+    background: none;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+
+.or{
+    margin-top: 20px;
+}
+
+.googleLogo{
+    display: flex;
+    width: 45px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 58px 0px 0px 58px;
+    border: 1px solid #000;
+    border-right: none;
+    background: rgba(217, 217, 217, 0.00);
+    justify-content: center;
+    align-items: center;
+}
+
+.continueWithGoogle{
+    display: flex;
+    color: white;
+    width: 242px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 0px 58px 58px 0px;
+    border: 1px solid #000;
+    background: #008CFF;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.alumniSignUp{
+    text-decoration: underline;
+    color: #000;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.signUpBtn{
+    width: 130px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 58px;
+    border: 1px solid #000;
+    background: #80BCBB;
+    margin-top: 15px;
+}

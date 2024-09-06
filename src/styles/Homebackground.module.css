@@ -3,29 +3,43 @@
     height: 100%;
     position: relative; /* Ensure the parent has a relative position */
     overflow: hidden;
- }
- 
- .circle1 {
-     position: absolute;
-     width: 456px;
-     height: 456px;
-     border-radius: 50%;
-     background-color: #FFF5F5;
-     transform: translateX(-87px) translateY(-65px);
- }
- 
- .circle2 {
-     position: absolute;
-     width: 557px;
-     height: 557px;
-     border-radius: 50%;
-     background-color: rgba(255, 197, 165, 0.68);
-     top: 0;
-     left: 333px;
-     transform: translateY(-354px);
- }
+}
 
- .circle3{
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure background is behind content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content is above background */
+}
+
+.circle1 {
+    position: absolute;
+    width: 456px;
+    height: 456px;
+    border-radius: 50%;
+    background-color: #FFF5F5;
+    transform: translateX(-87px) translateY(-65px);
+}
+
+.circle2 {
+    position: absolute;
+    width: 557px;
+    height: 557px;
+    border-radius: 50%;
+    background-color: rgba(255, 197, 165, 0.68);
+    top: 0;
+    left: 333px;
+    transform: translateY(-354px);
+}
+
+.circle3 {
     position: absolute;
     width: 792px;
     height: 792px;
@@ -34,9 +48,9 @@
     top: 0;
     left: 0;
     transform: translateX(-344px) translateY(428px);
- }
+}
 
- .circle4{
+.circle4 {
     position: absolute;
     width: 432px;
     height: 432px;
@@ -44,9 +58,9 @@
     background-color: rgba(251, 228, 255, 0.29);
     top: 500px;
     left: 570px;
- }
+}
 
- .circle5{
+.circle5 {
     position: absolute;
     width: 572px;
     height: 572px;
@@ -55,9 +69,9 @@
     top: 150px;
     left: 980px;
     z-index: 1;
- }
+}
 
- .circle6{
+.circle6 {
     position: absolute;
     width: 432px;
     height: 432px;
@@ -66,4 +80,4 @@
     bottom: 45px;
     right: 30px;
     z-index: 0;
- }
+}
